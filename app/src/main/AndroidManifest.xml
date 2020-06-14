@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cookandroid.davin">
-<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"
-             android:screenOrientation="landscape"
+            android:screenOrientation="landscape"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +23,35 @@
             android:label="게임시작"
             android:screenOrientation="landscape"
             ></activity>
+        <activity android:name=".tuto_1"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".tuto_2"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".tuto_3"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".tuto_4"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".tuto_5"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".tuto_6"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".tuto_7"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".tuto_8"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".tuto_9"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".tuto_10"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".tuto_11"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".tuto_12"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".tuto_13"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".tuto_14"
+            android:screenOrientation="landscape"/>
+
     </application>
 
 </manifest>

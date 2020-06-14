@@ -5,6 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
         <item name="colorPrimary">#000000</item> <!-- 이게 타이틀 색상!-->
         <item name="colorPrimaryDark">#FDD296</item><!-- 이게 시계있는거 그거 바-->
         <item name="colorAccent">#FDCD8C</item><!-- 이게 일반적인 체크박스같은거 색깔-->
