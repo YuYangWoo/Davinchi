@@ -14,7 +14,7 @@ import android.view.View.OnClickListener;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-//���� ���� activity
+//게임 시작 activity
 public class gameActivity extends AppCompatActivity {
     private int comId = R.id.Button01;
     private int userId = R.id.Button14;
