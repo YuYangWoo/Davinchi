@@ -77,7 +77,7 @@ public void onBackPressed(){
 }
    public void startClick(View v)
     {
-        Intent startintent = new Intent(getApplicationContext(),StartActivity.class);
+        Intent startintent = new Intent(getApplicationContext(),gameActivity.class);
         startActivity(startintent);
     }
     public void tutoClick(View v)

@@ -51,7 +51,8 @@
             android:screenOrientation="landscape"/>
         <activity android:name=".tuto_14"
             android:screenOrientation="landscape"/>
-
+        <activity android:name=".gameActivity"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
