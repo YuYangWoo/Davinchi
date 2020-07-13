@@ -4,7 +4,9 @@ import java.util.Random;
 import java.util.Scanner;
 import android.app.Activity;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -16,6 +18,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 //게임 시작 activity
 public class gameActivity extends AppCompatActivity {
+    Button startbtn;
+    MediaPlayer mediaPlayer ;
     private int comId = R.id.Button01;
     private int userId = R.id.Button14;
     private int cardId = R.id.Button27;
@@ -43,13 +47,45 @@ public class gameActivity extends AppCompatActivity {
         }
         return false;
     }
+    public void startbtnclick(View v)
+    {
+
+
+        if(mediaPlayer.isPlaying()==true){
+            startbtn.setBackgroundResource(R.drawable.umx);
+            mediaPlayer.pause();
+        }
+        else
+        {
+            startbtn.setBackgroundResource(R.drawable.umo);
+            mediaPlayer.start();
+        }
+    }
+    public void onUserLeaveHint(){
+        mediaPlayer.pause();
+        super.onUserLeaveHint();
+    }
+    public void onResume(){
+        mediaPlayer.start();
+        super.onResume();
+    }
+    public void onDestroy(){
+        mediaPlayer.stop();
+        super.onDestroy();
+    }
+    public void onBackPressed(){
+        mediaPlayer.stop();
+        super.onBackPressed();
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.game_activity);
-
+        //음악파일 삽입
+        startbtn=findViewById(R.id.startbtn);
+        mediaPlayer= MediaPlayer.create(this,R.raw.game_bgm);
         // 카드 버튼 선언
         final Button blackCard = (Button) findViewById(R.id.Button_Black);
         final Button whiteCard = (Button) findViewById(R.id.Button_White);
@@ -1423,4 +1459,3 @@ public class gameActivity extends AppCompatActivity {
 
     }
 }
-
