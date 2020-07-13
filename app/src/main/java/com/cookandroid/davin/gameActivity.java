@@ -100,13 +100,10 @@ public class gameActivity extends AppCompatActivity {
                 if (color == -1) { // color가 -1일때 카드를 뽑을 수 있게 설정
                     color = 0; // 검은색을 눌렀으므로 color를 0으로 설정
                     if (Card.numBcard > 0) {
-                        String num = Integer.toString(--Card.numBcard); // 남은카드갯수를
-                        // 하나 감소
+                        String num = Integer.toString(--Card.numBcard); // 남은카드갯수를 하나 감소
                         blackCard.setText(num); // 숫자 출력
-                        user.pull(color); // 카드 뽑기기기기
-                        for (int j = user.pullcard[0]; j < user.cardNum; j++) { // 뽑은카드를
-                            // 출력하는
-                            // 함수
+                        user.pull(color); // 카드 뽑기
+                        for (int j = user.pullcard[0]; j < user.cardNum; j++) { // 뽑은카드를 출력
                             printCardColor(userId + j, user.mycard[j]);
                             if (user.showcard[j] != -1)
                                 printCardNum(userId + j, user.mycard[j] * -1);
@@ -888,7 +885,7 @@ public class gameActivity extends AppCompatActivity {
                             GameOver("USER");
                         else {
                             userturn = 1;
-                            textview.append("\n 계속 맞추시려면 GO버튼을, 그만하시려면 STOP버튼을 눌러주세요\n");
+                            textview.append("\n 계속하려면 GO,아니면 STOP\n");
                             stopCard.setBackgroundResource(R.drawable.stop);
                             goCard.setBackgroundResource(R.drawable.go);
                         }
@@ -919,7 +916,7 @@ public class gameActivity extends AppCompatActivity {
                             GameOver("USER");
                         else {
                             userturn = 1;
-                            textview.append("\n 계속 맞추시려면 GO버튼을, 그만하시려면 STOP버튼을 눌러주세요\n");
+                            textview.append("\n 계속하려면 GO,아니면 STOP\n");
                             stopCard.setBackgroundResource(R.drawable.stop);
                             goCard.setBackgroundResource(R.drawable.go);
                         }
@@ -950,7 +947,7 @@ public class gameActivity extends AppCompatActivity {
                             GameOver("USER");
                         else {
                             userturn = 1;
-                            textview.append("\n 계속 맞추시려면 GO버튼을, 그만하시려면 STOP버튼을 눌러주세요\n");
+                            textview.append("\n 계속하려면 GO,아니면 STOP\n");
                             stopCard.setBackgroundResource(R.drawable.stop);
                             goCard.setBackgroundResource(R.drawable.go);
                         }
@@ -981,7 +978,7 @@ public class gameActivity extends AppCompatActivity {
                             GameOver("USER");
                         else {
                             userturn = 1;
-                            textview.append("\n 계속 맞추시려면 GO버튼을, 그만하시려면 STOP버튼을 눌러주세요\n");
+                            textview.append("\n 계속하려면 GO,아니면 STOP\n");
                             stopCard.setBackgroundResource(R.drawable.stop);
                             goCard.setBackgroundResource(R.drawable.go);
                         }
@@ -1012,7 +1009,7 @@ public class gameActivity extends AppCompatActivity {
                             GameOver("USER");
                         else {
                             userturn = 1;
-                            textview.append("\n 계속 맞추시려면 GO버튼을, 그만하시려면 STOP버튼을 눌러주세요\n");
+                            textview.append("\n 계속하려면 GO,아니면 STOP\n");
                             stopCard.setBackgroundResource(R.drawable.stop);
                             goCard.setBackgroundResource(R.drawable.go);
                         }
@@ -1043,7 +1040,7 @@ public class gameActivity extends AppCompatActivity {
                             GameOver("USER");
                         else {
                             userturn = 1;
-                            textview.append("\n 계속 맞추시려면 GO버튼을, 그만하시려면 STOP버튼을 눌러주세요\n");
+                            textview.append("\n 계속하려면 GO,아니면 STOP\n");
                             stopCard.setBackgroundResource(R.drawable.stop);
                             goCard.setBackgroundResource(R.drawable.go);
                         }
@@ -1074,7 +1071,7 @@ public class gameActivity extends AppCompatActivity {
                             GameOver("USER");
                         else {
                             userturn = 1;
-                            textview.append("\n 계속 맞추시려면 GO버튼을, 그만하시려면 STOP버튼을 눌러주세요\n");
+                            textview.append("\n 계속하려면 GO,아니면 STOP\n");
                             stopCard.setBackgroundResource(R.drawable.stop);
                             goCard.setBackgroundResource(R.drawable.go);
                         }
@@ -1105,7 +1102,7 @@ public class gameActivity extends AppCompatActivity {
                             GameOver("USER");
                         else {
                             userturn = 1;
-                            textview.append("\n 계속 맞추시려면 GO버튼을, 그만하시려면 STOP버튼을 눌러주세요\n");
+                            textview.append("\n 계속하려면 GO,아니면 STOP\n");
                             stopCard.setBackgroundResource(R.drawable.stop);
                             goCard.setBackgroundResource(R.drawable.go);
                         }
@@ -1136,7 +1133,7 @@ public class gameActivity extends AppCompatActivity {
                             GameOver("USER");
                         else {
                             userturn = 1;
-                            textview.append("\n 계속 맞추시려면 GO버튼을, 그만하시려면 STOP버튼을 눌러주세요\n");
+                            textview.append("\n 계속하려면 GO,아니면 STOP\n");
                             stopCard.setBackgroundResource(R.drawable.stop);
                             goCard.setBackgroundResource(R.drawable.go);
                         }
@@ -1168,7 +1165,7 @@ public class gameActivity extends AppCompatActivity {
                             GameOver("USER");
                         else {
                             userturn = 1;
-                            textview.append("\n 계속 맞추시려면 GO버튼을, 그만하시려면 STOP버튼을 눌러주세요\n");
+                            textview.append("\n 계속하려면 GO,아니면 STOP\n");
                             stopCard.setBackgroundResource(R.drawable.stop);
                             goCard.setBackgroundResource(R.drawable.go);
                         }
@@ -1402,8 +1399,8 @@ public class gameActivity extends AppCompatActivity {
     void GameOver(String turn) {
         Button score = (Button) findViewById(R.id.btn_score);
         TextView textview = (TextView) findViewById(R.id.textView1);
-        // textview.append("\n ***게임이 종료되었습니다***\n");
-        // textview.append(" " + turn + "의 승리입니다\n");
+         textview.append("\n ***게임이 종료되었습니다***\n");
+         textview.append(" " + turn + "의 승리입니다\n");
         if (turn == "COM") {
             score.setBackgroundResource(R.drawable.win);
             textview.setText(" ");
@@ -1423,147 +1420,7 @@ public class gameActivity extends AppCompatActivity {
 
         }
 
-        //
+
     }
 }
 
-class Pull {
-    static Scanner n = new Scanner(System.in);
-    static Random rand = new Random();
-
-    static int pullCard(int color) { // 카드선택
-        int card = -1;
-        while (color == 0) { // 검은패 뽑기
-            card = (rand.nextInt(26) / 2) * 2;
-            if (Card.mainCard[card] != -1) {
-                Card.mainCard[card] = -1;
-                return card;
-            }
-        }
-        while (color == 1) { // 흰색패 뽑기
-            card = (rand.nextInt(26) / 2) * 2 + 1;
-            if (Card.mainCard[card] != -1) {
-                Card.mainCard[card] = -1;
-                return card;
-            }
-        }
-        return card;
-    }
-
-    static boolean CheckPullCard() { // 카드를 뽑을수 있는지 없는지 검사하는 함수
-        if ((Card.numWcard == 0) && (Card.numBcard == 0))
-            return false;
-        else
-            return true;
-    }
-}
-
-class Card extends Activity {
-    static int mainCard[] = new int[26]; // 아직 뽑히지 않은 카드의 배열, 뽑히면 값이 -1로 변경
-    static int numWcard = 13; // 남은 카드의 수
-    static int numBcard = 13; // 남은 카드의 수
-    int mycard[] = new int[13]; // 내가 현재 가지고 있는 카드
-    int showcard[] = new int[13]; // 상대방에게 보여지고 있는 카드
-    int pullcard[] = new int[2]; // 0은 뽑은 카드의 인덱스, 1은 뽑은카드의 값
-    int cardNum; // 내가 현재 가지고 있는 카드의 수
-    int joker = 0;
-    Scanner n = new Scanner(System.in);
-    Random rand = new Random();
-
-    Card() {
-        cardNum = 0;
-        for (int i = 0; i < 13; i++) {
-            mycard[i] = -1;
-            showcard[i] = -1;
-        }
-    }
-
-    void pull(int color) { // 카드 뽑기
-        int i = 0;
-
-        pullcard[1] = Pull.pullCard(color); // 뽑은 카드 값 저장
-        cardNum++;
-
-        for (i = cardNum - 2; i >= 0 && mycard[i] > pullcard[1]; i--) {
-            mycard[i + 1] = mycard[i]; // 레코드의 오른쪽 이동
-            showcard[i + 1] = showcard[i];
-        }
-        mycard[i + 1] = pullcard[1] + joker;
-        showcard[i + 1] = -1;
-        pullcard[0] = i + 1;
-    }
-
-    int infoCardColor(int location) { // 위치의 색깔을 리턴해주는 함수
-        return mycard[location] % 2;
-    }
-
-    boolean testCard(int location, int num) { // 추측한 숫자가 맞으면
-        if (mycard[location] == num) {
-            showcard[location] = num;
-            return true;
-        } else
-            return false;
-    }
-
-    void openCard(int location) { // 뽑은 카드를 공개하는 함수
-        showcard[location] = mycard[location];
-    }
-
-    int getGuessLocation() { // com이 추측할 위치의 숫자를 리턴해주는 함수
-        int location = -1;
-        while (true) {
-            location = rand.nextInt(cardNum);
-            if (showcard[location] == -1 && mycard[location] != -1)
-                return location;
-        }
-    }
-
-    boolean CheckGuessNumber(int num, int turn) { // 추측하려는 수를 내가 이미 가지고있는지 아닌지
-        // 판단(false일 경우 추측 가능)
-        if (turn == 0) { // 내 턴일 경우
-            for (int i = 0; i < cardNum; i++)
-                if (mycard[i] == num)
-                    return false;
-        } else { // 상대방 턴일 경우
-            for (int i = 0; i < cardNum; i++)
-                if (showcard[i] == num)
-                    return false;
-        }
-        return true;
-    }
-
-    boolean CheckGuessLocation(int num) { // 추측하려는 위치가 이미 공개되어있는지 아닌지 판단(false일
-        // 경우 추측 가능)
-        if (showcard[num] == -1)
-            return false;
-        else
-            return true;
-    }
-
-    boolean CheckFinish() {
-        for (int i = 0; i < cardNum; i++)
-            if (showcard[i] != mycard[i])
-                return false;
-        return true;
-    }
-
-    int firstTurn(int location, int color) { // 첫번째차례에 랜덤으로 숫자 리턴
-        int randomNum;
-        while (true) {
-            if (location == 0) {
-                if (color == 0)
-                    randomNum = ((rand.nextInt(14)) / 2) * 2;
-                else
-                    randomNum = ((rand.nextInt(14)) / 2) * 2 + 1;
-            } else {
-                if (color == 0)
-                    randomNum = ((rand.nextInt(14) + 12) / 2) * 2;
-                else
-                    randomNum = ((rand.nextInt(14) + 12) / 2) * 2 + 1;
-            }
-            for (int i = 0; i < cardNum; i++)
-                if (mycard[i] != randomNum)
-                    return randomNum;
-        }
-    }
-}
