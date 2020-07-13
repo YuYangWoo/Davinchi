@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     TextView start, tuto, exit;
-    Button startbtn;
+    Button startbtn11;
     MediaPlayer mediaPlayer;
 
     @Override
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         start = findViewById(R.id.start);
         tuto = findViewById(R.id.tuto);
         exit = findViewById(R.id.exit);
-        startbtn = findViewById(R.id.startbtn);
+        startbtn11 = findViewById(R.id.startbtn);
         mediaPlayer = MediaPlayer.create(this, R.raw.main_bgm);
         hidenavigate();
 
@@ -50,10 +50,10 @@ public class MainActivity extends AppCompatActivity {
     public void startbtnclick(View v) {
 
         if (mediaPlayer.isPlaying() == true) {
-            startbtn.setBackgroundResource(R.drawable.umx);
+            startbtn11.setBackgroundResource(R.drawable.umx);
             mediaPlayer.pause();
         } else {
-            startbtn.setBackgroundResource(R.drawable.umo);
+            startbtn11.setBackgroundResource(R.drawable.umo);
             mediaPlayer.start();
         }
     }

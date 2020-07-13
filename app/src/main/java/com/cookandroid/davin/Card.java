@@ -79,15 +79,9 @@ class Card extends Activity {
         return true;
     }
 
-    boolean CheckGuessLocation(int num) { // 추측하려는 위치가 이미 공개되어있는지 아닌지 판단(false일
-        // 경우 추측 가능)
-        if (showcard[num] == -1)
-            return false;
-        else
-            return true;
-    }
 
-    boolean CheckFinish() {
+
+    boolean CheckFinish() { //내가 컴퓨터 카드 추측
         for (int i = 0; i < cardNum; i++)
             if (showcard[i] != mycard[i])
                 return false;

@@ -49,7 +49,7 @@ public class gameActivity extends AppCompatActivity {
         return false;
     }
 
-    public void startbtnclick(View v) {
+    public void startbtncli(View v) {
 
 
         if (mediaPlayer.isPlaying() == true) {
@@ -87,7 +87,7 @@ public class gameActivity extends AppCompatActivity {
 
         setContentView(R.layout.game_activity);
         //음악파일 삽입
-        startbtn = findViewById(R.id.startbtn);
+        startbtn = findViewById(R.id.gamestartbtn);
         mediaPlayer = MediaPlayer.create(this, R.raw.game_bgm);
         // 카드 버튼 선언
         final Button blackCard = (Button) findViewById(R.id.Button_Black);
@@ -269,9 +269,7 @@ public class gameActivity extends AppCompatActivity {
                             if ((com.mycard[num] % 2 > com.mycard[i] % 2)
                                     && (i + 1 == num)) // 검-흰 순서일때 같은 숫자일 경우
                                 min = com.showcard[i] - 1;
-                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은
-                                // 색일
-                                // 경우
+                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은 색일 경우
                                 min = com.showcard[i] + 2;
                             else
                                 // 다른 색일 경우
@@ -324,9 +322,7 @@ public class gameActivity extends AppCompatActivity {
                             if ((com.mycard[num] % 2 > com.mycard[i] % 2)
                                     && (i + 1 == num)) // 검-흰 순서일때 같은 숫자일 경우
                                 min = com.showcard[i] - 1;
-                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은
-                                // 색일
-                                // 경우
+                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은 색일 경우
                                 min = com.showcard[i] + 2;
                             else
                                 // 다른 색일 경우
@@ -379,9 +375,7 @@ public class gameActivity extends AppCompatActivity {
                             if ((com.mycard[num] % 2 > com.mycard[i] % 2)
                                     && (i + 1 == num)) // 검-흰 순서일때 같은 숫자일 경우
                                 min = com.showcard[i] - 1;
-                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은
-                                // 색일
-                                // 경우
+                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은 색일 경우
                                 min = com.showcard[i] + 2;
                             else
                                 // 다른 색일 경우
@@ -433,9 +427,7 @@ public class gameActivity extends AppCompatActivity {
                             if ((com.mycard[num] % 2 > com.mycard[i] % 2)
                                     && (i + 1 == num)) // 검-흰 순서일때 같은 숫자일 경우
                                 min = com.showcard[i] - 1;
-                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은
-                                // 색일
-                                // 경우
+                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은 색일 경우
                                 min = com.showcard[i] + 2;
                             else
                                 // 다른 색일 경우
@@ -487,9 +479,7 @@ public class gameActivity extends AppCompatActivity {
                             if ((com.mycard[num] % 2 > com.mycard[i] % 2)
                                     && (i + 1 == num)) // 검-흰 순서일때 같은 숫자일 경우
                                 min = com.showcard[i] - 1;
-                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은
-                                // 색일
-                                // 경우
+                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은 색일 경우
                                 min = com.showcard[i] + 2;
                             else
                                 // 다른 색일 경우
@@ -541,9 +531,7 @@ public class gameActivity extends AppCompatActivity {
                             if ((com.mycard[num] % 2 > com.mycard[i] % 2)
                                     && (i + 1 == num)) // 검-흰 순서일때 같은 숫자일 경우
                                 min = com.showcard[i] - 1;
-                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은
-                                // 색일
-                                // 경우
+                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은 색일 경우
                                 min = com.showcard[i] + 2;
                             else
                                 // 다른 색일 경우
@@ -595,9 +583,7 @@ public class gameActivity extends AppCompatActivity {
                             if ((com.mycard[num] % 2 > com.mycard[i] % 2)
                                     && (i + 1 == num)) // 검-흰 순서일때 같은 숫자일 경우
                                 min = com.showcard[i] - 1;
-                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은
-                                // 색일
-                                // 경우
+                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은 색일 경우
                                 min = com.showcard[i] + 2;
                             else
                                 // 다른 색일 경우
@@ -649,9 +635,7 @@ public class gameActivity extends AppCompatActivity {
                             if ((com.mycard[num] % 2 > com.mycard[i] % 2)
                                     && (i + 1 == num)) // 검-흰 순서일때 같은 숫자일 경우
                                 min = com.showcard[i] - 1;
-                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은
-                                // 색일
-                                // 경우
+                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은 색일 경우
                                 min = com.showcard[i] + 2;
                             else
                                 // 다른 색일 경우
@@ -703,9 +687,7 @@ public class gameActivity extends AppCompatActivity {
                             if ((com.mycard[num] % 2 > com.mycard[i] % 2)
                                     && (i + 1 == num)) // 검-흰 순서일때 같은 숫자일 경우
                                 min = com.showcard[i] - 1;
-                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은
-                                // 색일
-                                // 경우
+                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은 색일 경우
                                 min = com.showcard[i] + 2;
                             else
                                 // 다른 색일 경우
@@ -757,9 +739,7 @@ public class gameActivity extends AppCompatActivity {
                             if ((com.mycard[num] % 2 > com.mycard[i] % 2)
                                     && (i + 1 == num)) // 검-흰 순서일때 같은 숫자일 경우
                                 min = com.showcard[i] - 1;
-                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은
-                                // 색일
-                                // 경우
+                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은 색일 경우
                                 min = com.showcard[i] + 2;
                             else
                                 // 다른 색일 경우
@@ -811,9 +791,7 @@ public class gameActivity extends AppCompatActivity {
                             if ((com.mycard[num] % 2 > com.mycard[i] % 2)
                                     && (i + 1 == num)) // 검-흰 순서일때 같은 숫자일 경우
                                 min = com.showcard[i] - 1;
-                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은
-                                // 색일
-                                // 경우
+                            else if (com.mycard[num] % 2 == com.mycard[i] % 2) // 같은 색일 경우
                                 min = com.showcard[i] + 2;
                             else
                                 // 다른 색일 경우
@@ -906,7 +884,7 @@ public class gameActivity extends AppCompatActivity {
             @Override
             public void onClick(android.view.View v) {
                 if (userguess[0] != -1) {
-                    if (!(com.testCard(userloaction, userguess[0]))) {
+                    if (!(com.testCard(userloaction, userguess[0]))) {//추측이 틀리면
                         failureMessage("USER");
                         user.openCard(user.pullcard[0]); // 가져온 패 공개
                         printCardNum(userId + user.pullcard[0],
@@ -916,7 +894,7 @@ public class gameActivity extends AppCompatActivity {
                             return;
                         }
                         comTurn();
-                    } else {
+                    } else { //추측이 맞으면
                         successMessage("COM");
                         com.openCard(userloaction); // 맞춘패 공개
                         printCardNum(comId + userloaction, userguess[0] * -1);
