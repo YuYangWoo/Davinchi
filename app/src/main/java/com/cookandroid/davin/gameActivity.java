@@ -2,6 +2,7 @@ package com.cookandroid.davin;
 
 import java.util.Random;
 import java.util.Scanner;
+
 import android.app.Activity;
 import android.graphics.Color;
 import android.media.MediaPlayer;
@@ -19,7 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 //게임 시작 activity
 public class gameActivity extends AppCompatActivity {
     Button startbtn;
-    MediaPlayer mediaPlayer ;
+    MediaPlayer mediaPlayer;
     private int comId = R.id.Button01;
     private int userId = R.id.Button14;
     private int cardId = R.id.Button27;
@@ -47,33 +48,35 @@ public class gameActivity extends AppCompatActivity {
         }
         return false;
     }
-    public void startbtnclick(View v)
-    {
+
+    public void startbtnclick(View v) {
 
 
-        if(mediaPlayer.isPlaying()==true){
+        if (mediaPlayer.isPlaying() == true) {
             startbtn.setBackgroundResource(R.drawable.umx);
             mediaPlayer.pause();
-        }
-        else
-        {
+        } else {
             startbtn.setBackgroundResource(R.drawable.umo);
             mediaPlayer.start();
         }
     }
-    public void onUserLeaveHint(){
+
+    public void onUserLeaveHint() {
         mediaPlayer.pause();
         super.onUserLeaveHint();
     }
-    public void onResume(){
+
+    public void onResume() {
         mediaPlayer.start();
         super.onResume();
     }
-    public void onDestroy(){
+
+    public void onDestroy() {
         mediaPlayer.stop();
         super.onDestroy();
     }
-    public void onBackPressed(){
+
+    public void onBackPressed() {
         mediaPlayer.stop();
         super.onBackPressed();
     }
@@ -84,8 +87,8 @@ public class gameActivity extends AppCompatActivity {
 
         setContentView(R.layout.game_activity);
         //음악파일 삽입
-        startbtn=findViewById(R.id.startbtn);
-        mediaPlayer= MediaPlayer.create(this,R.raw.game_bgm);
+        startbtn = findViewById(R.id.startbtn);
+        mediaPlayer = MediaPlayer.create(this, R.raw.game_bgm);
         // 카드 버튼 선언
         final Button blackCard = (Button) findViewById(R.id.Button_Black);
         final Button whiteCard = (Button) findViewById(R.id.Button_White);
@@ -1435,8 +1438,8 @@ public class gameActivity extends AppCompatActivity {
     void GameOver(String turn) {
         Button score = (Button) findViewById(R.id.btn_score);
         TextView textview = (TextView) findViewById(R.id.textView1);
-         textview.append("\n ***게임이 종료되었습니다***\n");
-         textview.append(" " + turn + "의 승리입니다\n");
+        textview.append("\n ***게임이 종료되었습니다***\n");
+        textview.append(" " + turn + "의 승리입니다\n");
         if (turn == "COM") {
             score.setBackgroundResource(R.drawable.win);
             textview.setText(" ");

@@ -295,7 +295,6 @@
         android:layout_width="30dp"
         android:layout_height="45dp"
         android:layout_alignBottom="@+id/Button27"
-
         android:layout_toRightOf="@+id/Button27"
         android:background="#00ff0000" />
 
