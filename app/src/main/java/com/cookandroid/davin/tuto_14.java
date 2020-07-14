@@ -28,7 +28,10 @@ public class tuto_14 extends AppCompatActivity{
         decor_View.setSystemUiVisibility(ui_Options);
     }
 
-
+    public void onUserLeaveHint() {
+       tuto_1.stopBgm();
+        super.onUserLeaveHint();
+    }
     public void onDestroy(){
         tuto_1.stopBgm();
         android.util.Log.i("액티비티 테스트","ondestroy()");

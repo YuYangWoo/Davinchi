@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -120,7 +121,7 @@ public class gameActivity extends AppCompatActivity {
         Button com12 = (Button) findViewById(comId + 12);
         final TextView textview = (TextView) findViewById(R.id.textView1);
         final ScrollView scrollView = (ScrollView) findViewById(R.id.scrollView1);
-
+        hidenavigate();
         scrollView.post(new Runnable() {
             @Override
             public void run() {
@@ -1357,7 +1358,18 @@ public class gameActivity extends AppCompatActivity {
             // 흰색일 경우
             card.setBackgroundResource(R.drawable.white);
     }
-
+    public void hidenavigate() {
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        View decor_View = getWindow().getDecorView();
+        int ui_Options = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
+        decor_View.setSystemUiVisibility(ui_Options);
+    }
     void successMessage(String turn) {
         TextView textview = (TextView) findViewById(R.id.textView1);
         final ScrollView scrollView = (ScrollView) findViewById(R.id.scrollView1);
